@@ -1,0 +1,99 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #FFDA00; /* Amarillo */
+    color: #0033A0; /* Azul */
+    text-align: center;
+    padding: 20px;
+}
+
+.destinos {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan a la siguiente fila en pantallas pequeñas */
+    justify-content: space-between; /* Muestra 3 tarjetas por fila en pantallas grandes */
+    padding: 20px;
+}
+
+.tarjeta {
+    text-align: center;
+    padding: 20px;
+    width: calc(33.33% - 65px); /* Ajusta el ancho de las tarjetas para un mejor aspecto en pantallas más grandes y deja un espacio entre ellas */
+    margin: 10px;
+    background: #fff; /* Fondo blanco para resaltar las tarjetas */
+    border: 1px solid #ccc; /* Borde gris */
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos de las imágenes */
+.imagen-container {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    width: 100%;
+    height: 275px; /* Establece la altura deseada */
+}
+
+img {
+    max-width: 100%; /* Establece el ancho deseado */
+    height: auto;
+    border-radius: 5px 5px 0 0; /* Esquinas redondeadas en la parte superior de las imágenes */
+}
+
+/* Estilos del texto en la tarjeta */
+.contenido {
+    padding: 20px;
+}
+
+h2 {
+    margin: 10px 0;
+    color: #0033A0; /* Azul */
+}
+
+p {
+    margin: 0;
+}
+
+/* Estilos del formulario */
+.formulario {
+    background: #FFDA00; /* Amarillo */
+    text-align: center;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-top: 10px;
+    color: #0033A0; /* Azul */
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 100%; /* Asegura que los campos de entrada ocupen todo el ancho disponible */
+}
+
+button {
+    background: #0033A0; /* Azul */
+    color: #FFDA00; /* Amarillo */
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilos de dispositivos móviles */
+@media (max-width: 768px) {
+    .tarjeta {
+        width: calc(50% - 20px); /* 2 tarjetas por fila en pantallas pequeñas */
+    }
+}
